@@ -4,7 +4,7 @@
 #include <random>
 using namespace std;
 
-mt19937_64 gen(random_device{}());	// рандомные числа в большом диапазоне
+mt19937_64 gen(random_device{}());
 
 char key[] = "0x000000000000000";
 char rkey[] = "0x000000000000000";
@@ -73,7 +73,7 @@ void genANDfind(int x) {
 
 		buf_key = gk;
 
-		cout << "Generated key: " << gk << endl;	// ≈сли убрать эту строку, процесс станет намного быстрее
+		cout << "Generated key: " << gk << endl;
 
 		count++;
 	}
